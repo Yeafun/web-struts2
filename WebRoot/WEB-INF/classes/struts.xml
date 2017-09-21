@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="default" namespace="/" extends="struts-default">
+	
+		<action name="hello" class="com.yz.action.HelloWorld">
+			<result>/ok.jsp</result>
+		</action>
+		
+		<action name="action2" method="print_plaintext" class="com.yz.action.HelloWorld">
+			<result name="faild" type="plainText">/ok.jsp</result>
+		</action>
+		
+		<action name="action3" method="baidu" class="com.yz.action.HelloWorld">
+			<result name="success" type="redirect">http://www.baidu.com</result>
+		</action>
+		
+		<action name="action4" method="redirectAction1" class="com.yz.action.HelloWorld">
+			<result type="redirectAction">hello</result>
+		</action>
+		
+		<action name="upload"  class="com.yz.action.UploadAction">
+			<result>/index.jsp</result>
+		</action>
+		
+		<action name="login" method="toLoginJsp" class="com.yz.action.HelloWorld">
+			<result>/LoginJsp.jsp</result>
+		</action>
+		
+		<action name="login_judge" class="com.yz.action.Login">
+			<result name="success">/LoginSuccess.jsp</result>
+			<result name="error">/LoginError.jsp</result>
+		</action>
+		
+	</package>
+</struts>    
+
