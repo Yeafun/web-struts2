@@ -1,13 +1,12 @@
-# web-struts2
-web_struts2_tutorial
-======
-IDE：myeclipse 2017
--------------------
-Tomcat 8.5
-----
-Struts2
--------
-内容为我学习过程中做的各种例子，将它们整合为一个工程作为学习笔记 
+# web_struts2_tutorial
+
+##### IDE：myeclipse 2017
+
+##### Server:Tomcat 8.5
+
+##### Stuct:Struts2
+
+该项目内容为我学习过程中做的各种例子，将它们整合为一个工程作为学习笔记 
 目前包含以下知识点 
 ### 1.action不同类型
     action->jsp
